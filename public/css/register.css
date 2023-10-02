@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(211, 168, 115);
+    text-align: center;
+}
+table{
+    padding: 5px 5px;
+    background-color: #4CAF50;
+}
+td{
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+}
+h1{
+    text-align: center;
+    color: #4CAF50;
+    font-family: monospace;
+    font-size: xx-large;
+}
+button{
+    width: 120px;
+}

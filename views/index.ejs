@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<h1>WELCOME</h1>
+<table>
+  <tr>
+    <th><a href="/register">REGISTER</a></th>
+    <th><a href="/login">LOGIN</a></th>
+  </tr>
+</table>
+<div>
+  <table align="center">
+    <thead>
+        <tr>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Delete</th>
+        </tr>
+    </thead>
+    
+      <% for (let i = 0; i < users.length; i++) {  %>
+        <% const user = users[i]; %> 
+       <tr>
+          <td><%= user.firstName %><br></td>
+          <td><%= user.lastName %><br></td>
+          
+          <td>
+            <form action="/delete" method="post" >
+              <button type="submit" name="userId" value=<%= users[i].id %>>Delete</button>
+            </form>
+          </td>
+       </tr>
+        <tr>
+          
+        </tr>
+      <% } %>
+
+   
+  </table>
+</div>
+  
+</body>
+</html>

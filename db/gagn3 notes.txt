@@ -1,0 +1,15 @@
+1NF = Við meigum ekki vera með meira en 1 hlut á hverjum dálk
+2. Gildi í sama dálk hafa sömu gagnnatýpa
+3. Röð sem við setjum gögn inn skiptir ekki máli 
+4. Allir dálkar hafa ólik nöfn 
+
+
+2NF = Þarf að fylgja öllum reglum á unðan 
+2. Partial Dependency er something that shouldnot be there eins og a teacher dalk í score teacher á vera með his own table
+
+3NF = Follow all the rules before
+2. Transitive Dependency allar dalkar verða að treysta PRIMARY KEY basically 
+ekki hafa genres í books eða einh svoleiðis
+
+4NF = Follow all the rules before
+2. If you can have information in that column have it in a separate table
